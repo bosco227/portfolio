@@ -1,0 +1,77 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+}
+
+#cabecalho {
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    display: flex;
+}
+#menu{
+    display: flex;
+    position: fixed;
+    right: 10px;
+    top: 25px;
+    gap: 10px;
+}
+#menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#corpoTopo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    vertical-align: top;
+    height: 100%;
+}
+
+.apresentacao {
+    border: red solid 1px;
+    width: 40%;
+    height: auto ;
+    margin-left: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    flex-flow: column;
+}
+
+#corpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    height: 100%;
+    gap: 20px;   
+}
+
+.Projetos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+#rodape{
+    text-align: right;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+}
