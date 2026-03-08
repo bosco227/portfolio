@@ -20,9 +20,7 @@ export default function About() {
         </h2>
         <p>
           Por enquanto estou desenvolvendo usando ReactJS, NextJS para front,
-          Django para backend, e Postgres para administrar bancos de dados, mas
-          estou buscando aprender Java para usar Springboot, devido à sua
-          versatilidade{" "}
+          Django para backend, e Postgres para administrar bancos de dados.
         </p>
         <h2 className="font-bold text-2xl mt-2">Objetivo</h2>
         <p>
