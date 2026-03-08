@@ -14,6 +14,7 @@ export default function Tech() {
 
   return (
     <motion.section
+      className="py-20 scroll-mt-24"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}

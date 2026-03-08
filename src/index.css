@@ -17,3 +17,7 @@
 .glow-animation {
   animation: floatGlow 12s ease-in-out infinite;
 }
+
+section {
+  scroll-margin-top: 100px;
+}

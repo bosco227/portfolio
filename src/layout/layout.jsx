@@ -17,7 +17,7 @@ export default function Layout({ children }) {
         <div className="absolute bottom-40 right-1/3 w-[450px] h-[450px] bg-purple-500/20 blur-[140px] rounded-full -z-10 glow-animation"></div>
 
         {/* Conteúdo */}
-        <main className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-16 py-20">
+        <main className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-16 py-24">
           <div className="flex flex-col gap-24">
             {items.map((child, index) => (
               <div key={index}>
