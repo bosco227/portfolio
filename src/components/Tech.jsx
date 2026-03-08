@@ -18,7 +18,7 @@ export default function Tech() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <section className="py-16">
+      <section className="py-16" id="tech">
         <h2 className="text-2xl font-bold mb-8">Technologies</h2>
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

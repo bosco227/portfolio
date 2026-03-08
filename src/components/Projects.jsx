@@ -16,12 +16,22 @@ export default function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <section className="py-16">
+      <section className="py-16" id="projects">
         <h2 className="text-2xl font-bold mb-8">Projects</h2>
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project) => (
-            <div key={project.title} className="bg-slate-800 p-6 rounded-lg">
+            <div
+              key={project.title}
+              className="bg-slate-800 
+p-6 
+rounded-xl 
+border border-slate-700
+hover:border-sky-400
+hover:-translate-y-2
+transition
+duration-300"
+            >
               <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
 
               <p className="text-gray-400 mb-4">{project.desc}</p>

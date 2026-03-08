@@ -8,7 +8,9 @@ export default function Hero() {
       transition={{ duration: 0.6 }}
     >
       <section className="text-center py-20">
-        <h1 className="text-4xl font-bold">Antônio Bosco</h1>
+        <h1 className="text-5xl font-bold bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
+          Antônio Bosco
+        </h1>
 
         <p className="mt-4 mb-4 text-gray-600">
           Web Developer | JavaScript | React | Node

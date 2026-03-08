@@ -1,2 +1,19 @@
 @import "tailwindcss";
 
+@keyframes floatGlow {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  50% {
+    transform: translate(40px, -40px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.glow-animation {
+  animation: floatGlow 12s ease-in-out infinite;
+}

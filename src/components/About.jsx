@@ -7,7 +7,7 @@ export default function About() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <section className="text-center py-20">
+      <section className="text-center py-20" id="about">
         <h1 className="font-extrabold text-4xl text-center">Sobre mim</h1>
         <h2 className="mt-2 font-bold text-2xl">Quem sou</h2>
         <p>

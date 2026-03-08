@@ -3,6 +3,7 @@ import Tech from "./components/Tech";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Layout from "./layout/layout";
+import Contact from "./components/Contact";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
         <About />
         <Tech />
         <Projects />
+        <Contact />
       </Layout>
     </>
   );
