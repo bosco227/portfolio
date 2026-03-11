@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function Footer() {
   return (
     <motion.section
-      id="contacts"
+      id="contact"
       className="py-20 scroll-mt-24"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
