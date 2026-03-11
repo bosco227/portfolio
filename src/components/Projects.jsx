@@ -3,48 +3,67 @@ import { motion } from "framer-motion";
 export default function Projects() {
   const projects = [
     {
-      title: "pomodoro-clone",
-      desc: "Um projeto feito em React, um temporizador Pomodoro .",
-      tech: "React puro",
+      title: "Pomodoro Clone",
+      desc: "Aplicação de temporizador baseada na técnica Pomodoro.",
+      tech: ["React", "Tailwind"],
       link: "https://pomodoro-clone-woad.vercel.app/",
+      image: "/pomodoro.png", // coloque um screenshot em /public
     },
   ];
 
   return (
     <motion.section
+      id="projects"
+      className="py-20 scroll-mt-24"
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <section className="py-16" id="projects">
-        <h2 className="text-2xl font-bold mb-8">Projects</h2>
+      <h1 className="text-4xl font-extrabold text-center mb-12">Projetos</h1>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {projects.map((project) => (
-            <div
-              key={project.title}
-              className="bg-slate-800 
-p-6 
-rounded-xl 
-border border-slate-700
-hover:border-sky-400
-hover:-translate-y-2
-transition
-duration-300"
-            >
-              <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+      <div className="grid md:grid-cols-2 gap-10">
+        {projects.map((project) => (
+          <div
+            key={project.title}
+            className="bg-slate-800 border border-slate-700 rounded-xl overflow-hidden
+hover:-translate-y-2 hover:border-sky-400 cursor-pointer transition duration-300"
+          >
+            {/* imagem */}
+            <img
+              src={project.image}
+              alt={project.title}
+              className="w-full h-48 object-cover"
+            />
 
-              <p className="text-gray-400 mb-4">{project.desc}</p>
+            <div className="p-6">
+              <h3 className="text-xl font-semibold">{project.title}</h3>
 
-              <p className="text-sm text-sky-400">{project.tech}</p>
+              <p className="text-gray-400 mt-2">{project.desc}</p>
 
-              <a href={project.link} className="text-center">
-                Acessar
+              {/* tecnologias */}
+              <div className="flex flex-wrap gap-2 mt-4">
+                {project.tech.map((tech) => (
+                  <span
+                    key={tech}
+                    className="text-xs px-2 py-1 bg-slate-700 rounded"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              {/* botão */}
+              <a
+                href={project.link}
+                target="_blank"
+                className="inline-block mt-6 text-sky-400 hover:text-sky-300 transition"
+              >
+                Ver projeto →
               </a>
             </div>
-          ))}
-        </div>
-      </section>
+          </div>
+        ))}
+      </div>
     </motion.section>
   );
 }

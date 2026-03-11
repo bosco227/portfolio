@@ -4,36 +4,45 @@ import ProfilePic from "./ProfilePic.";
 export default function Hero() {
   return (
     <motion.section
+      id="hero"
+      className="min-h-[80vh] flex flex-col justify-center items-center text-center scroll-mt-24"
       initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
       <ProfilePic />
-      <section className="text-center py-20">
-        <h1 className="text-5xl font-bold bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
-          Antônio Bosco
-        </h1>
+      <h1 className="text-5xl font-extrabold">
+        Antônio{" "}
+        <span className="bg-linear-to-r from-sky-400 to-cyan-300 text-transparent bg-clip-text">
+          Bosco
+        </span>
+      </h1>
 
-        <p className="mt-4 mb-4 text-gray-600">
-          Web Developer | JavaScript | React | Node
-        </p>
+      <h2 className="text-2xl text-gray-300 mt-4">Frontend Developer</h2>
 
-        <div className="flex justify-center gap-4">
-          <a
-            className="bg-sky-500 px-4 py-2 rounded"
-            href="https://github.com/bosco227"
-          >
-            GitHub
-          </a>
+      <p className="text-gray-400 mt-6 max-w-xl">
+        Desenvolvendo aplicações web modernas utilizando React, JavaScript e
+        tecnologias do ecossistema web.
+      </p>
 
-          <a
-            className="border border-sky-500 px-4 py-2 rounded"
-            href="https://www.linkedin.com/in/antonio-bosco-720721362/"
-          >
-            LinkedIn
-          </a>
-        </div>
-      </section>
+      <div className="flex gap-4 mt-8">
+        <a
+          href="#projects"
+          className="px-6 py-3 bg-sky-500 rounded-lg font-medium
+          hover:bg-sky-400 transition"
+        >
+          Ver projetos
+        </a>
+
+        <a
+          href="https://github.com/bosco227"
+          target="_blank"
+          className="px-6 py-3 border border-slate-600 rounded-lg
+          hover:border-sky-400 transition"
+        >
+          GitHub
+        </a>
+      </div>
     </motion.section>
   );
 }

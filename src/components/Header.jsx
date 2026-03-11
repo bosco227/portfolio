@@ -38,7 +38,7 @@ export default function Header() {
     `transition ${
       active === id
         ? "text-sky-400 font-medium"
-        : "text-gray-400 hover:text-white"
+        : "text-gray-400 hover:text-sky-400"
     }`;
 
   return (
@@ -55,10 +55,6 @@ export default function Header() {
         <nav className="flex gap-6 text-sm">
           <a href="#about" className={linkStyle("about")}>
             About
-          </a>
-
-          <a href="#tech" className={linkStyle("tech")}>
-            Tech
           </a>
 
           <a href="#projects" className={linkStyle("projects")}>
