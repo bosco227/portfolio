@@ -7,6 +7,7 @@ export const translations = {
     whoText:
       "Sou um estudante de Engenharia de Software apaixonado por programação e desenvolvimento web.",
     projects: "Ver projetos",
+    p: "Projetos",
 
     tools: "Ferramentas que uso",
     toolsText:
@@ -25,6 +26,7 @@ export const translations = {
     whoText:
       "I am a Software Engineering student passionate about programming and web development.",
     projects: "See projects",
+    p: "Projects",
 
     tools: "Technologies I use",
     toolsText:

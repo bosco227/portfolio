@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import { LanguageContext } from "./context/LanguageContext";
+import { translations } from "./translations/translations";
+import { useContext } from "react";
 
 export default function Projects() {
   const projects = [
@@ -10,7 +13,8 @@ export default function Projects() {
       image: "/pomodoro.png", // coloque um screenshot em /public
     },
   ];
-
+  const { language } = useContext(LanguageContext);
+  const t = translations[language];
   return (
     <motion.section
       id="projects"
@@ -19,7 +23,7 @@ export default function Projects() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <h1 className="text-4xl font-extrabold text-center mb-12">Projetos</h1>
+      <h1 className="text-4xl font-extrabold text-center mb-12">{t.p}</h1>
 
       <div className="grid md:grid-cols-2 gap-10">
         {projects.map((project) => (
