@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import { LanguageContext } from "./context/LanguageContext";
+import { translations } from "./translations/translations";
+import { useContext } from "react";
 
 export default function About() {
   const techs = [
@@ -12,6 +15,9 @@ export default function About() {
     "Git",
   ];
 
+  const { language } = useContext(LanguageContext);
+  const t = translations[language];
+
   return (
     <motion.section
       id="about"
@@ -20,36 +26,25 @@ export default function About() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <h1 className="text-4xl font-extrabold text-center">Sobre mim</h1>
+      <h1 className="text-4xl font-extrabold text-center">{t.aboutTitle}</h1>
 
       <div className="mt-12 grid md:grid-cols-2 gap-12 items-start">
         {/* TEXTO */}
         <div className="space-y-6 text-gray-300">
           <div>
-            <h2 className="text-2xl font-semibold text-white">Quem sou</h2>
-            <p className="mt-2">
-              Sou estudante de Engenharia de Software com grande interesse na
-              área de programação e desenvolvimento web. Tenho foco em aprender
-              constantemente e desenvolver aplicações modernas utilizando
-              tecnologias atuais do ecossistema web.
-            </p>
+            <h2 className="text-2xl font-semibold text-white">{t.who}</h2>
+            <p className="mt-2">{t.whoText}</p>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold text-white">Objetivo</h2>
-            <p className="mt-2">
-              Busco oportunidades para evoluir como desenvolvedor, participar de
-              projetos reais e contribuir com soluções eficientes e bem
-              estruturadas.
-            </p>
+            <h2 className="text-2xl font-semibold text-white">{t.goal}</h2>
+            <p className="mt-2">{t.goalText}</p>
           </div>
         </div>
 
         {/* TECNOLOGIAS */}
         <div>
-          <h2 className="text-2xl font-semibold mb-6 text-white">
-            Tecnologias
-          </h2>
+          <h2 className="text-2xl font-semibold mb-6 text-white">{t.tools}</h2>
 
           <div className="flex flex-wrap gap-3">
             {techs.map((tech) => (

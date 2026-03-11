@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { LanguageContext } from "./context/LanguageContext";
+import { useContext } from "react";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -40,7 +42,11 @@ export default function Header() {
         ? "text-sky-400 font-medium"
         : "text-gray-400 hover:text-sky-400"
     }`;
+  const { language, setLanguage } = useContext(LanguageContext);
 
+  const toggleLanguage = () => {
+    setLanguage(language === "pt" ? "en" : "pt");
+  };
   return (
     <header
       className={`sticky top-0 z-50 transition-all duration-300 ${
@@ -64,6 +70,10 @@ export default function Header() {
           <a href="#contact" className={linkStyle("contact")}>
             Contact
           </a>
+
+          <button onClick={() => setLanguage(language === "pt" ? "en" : "pt")}>
+            {language === "pt" ? "PT" : "EN"}
+          </button>
         </nav>
       </div>
     </header>

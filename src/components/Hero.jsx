@@ -1,7 +1,12 @@
 import { motion } from "framer-motion";
 import ProfilePic from "./ProfilePic.";
+import { translations } from "./translations/translations";
+import { LanguageContext } from "./context/LanguageContext";
+import { useContext } from "react";
 
 export default function Hero() {
+  const { language } = useContext(LanguageContext);
+  const t = translations[language];
   return (
     <motion.section
       id="hero"
@@ -18,12 +23,11 @@ export default function Hero() {
         </span>
       </h1>
 
-      <h2 className="text-2xl text-gray-300 mt-4">Frontend Developer</h2>
+      <h2 className="text-2xl text-gray-300 mt-4">
+        Web Developer/Software Engineer
+      </h2>
 
-      <p className="text-gray-400 mt-6 max-w-xl">
-        Desenvolvendo aplicações web modernas utilizando React, JavaScript e
-        tecnologias do ecossistema web.
-      </p>
+      <p className="text-gray-400 mt-6 max-w-xl">{t.header}</p>
 
       <div className="flex gap-4 mt-8">
         <a
@@ -31,7 +35,7 @@ export default function Hero() {
           className="px-6 py-3 bg-sky-500 rounded-lg font-medium
           hover:bg-sky-400 transition"
         >
-          Ver projetos
+          {t.projects}
         </a>
 
         <a
