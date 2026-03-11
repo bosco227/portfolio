@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import ProfilePic from "./ProfilePic.";
 
 export default function Hero() {
   return (
@@ -7,6 +8,7 @@ export default function Hero() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
+      <ProfilePic />
       <section className="text-center py-20">
         <h1 className="text-5xl font-bold bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
           Antônio Bosco
