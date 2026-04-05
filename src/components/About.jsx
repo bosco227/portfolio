@@ -6,11 +6,12 @@ import { useContext } from "react";
 export default function About() {
   const techs = [
     "React",
-    "Next.js",
+    "NextJS",
+    "NestJS",
     "JavaScript",
     "Django",
     "PostgreSQL",
-    "Node.js",
+    "NodeJS",
     "TailwindCSS",
     "Git",
   ];
