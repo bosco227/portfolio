@@ -62,7 +62,7 @@ hover:-translate-y-2 hover:border-sky-400 cursor-pointer transition duration-300
                 target="_blank"
                 className="inline-block mt-6 text-sky-400 hover:text-sky-300 transition"
               >
-                {project.projects}
+                {t.project}
               </a>
             </div>
           </div>
