@@ -56,7 +56,7 @@ export default function Header() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="font-semibold">Antônio Bosco</h1>
+        <h1 className="font-semibold">Dev Antônio Bosco</h1>
 
         <nav className="flex gap-6 text-sm">
           <a href="#about" className={linkStyle("about")}>
