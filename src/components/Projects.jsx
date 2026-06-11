@@ -8,9 +8,16 @@ export default function Projects() {
     {
       title: "Pomodoro Clone",
       desc: "Aplicação de temporizador baseada na técnica Pomodoro.",
-      tech: ["React", "Tailwind"],
+      tech: ["React", "Tailwind","TypeScript"],
       link: "https://pomodoro-clone-woad.vercel.app/",
-      image: "/pomodoro.png", // coloque um screenshot em /public
+      image: "/pomodoro.png",
+    },
+    {
+      title: "Site Castor",
+      desc: "Site de vendas da loja de minha família.",
+      tech: ["React", "Tailwind","JavaScript"],
+      link: "https://site-castor.vercel.app/",
+      image: "/castor.png",
     },
   ];
   const { language } = useContext(LanguageContext);
