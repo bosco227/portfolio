@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { LanguageContext } from "./context/LanguageContext";
+import { translations } from "./translations/translations";
 import { useContext } from "react";
 
 export default function Header() {
@@ -43,9 +44,12 @@ export default function Header() {
         : "text-gray-400 hover:text-sky-400"
     }`;
   const { language, setLanguage } = useContext(LanguageContext);
+  const t = translations[language];
 
   const toggleLanguage = () => {
-    setLanguage(language === "pt" ? "en" : "pt");
+    const languages = ["en", "pt", "es"];
+    const currentIndex = languages.indexOf(language);
+    setLanguage(languages[(currentIndex + 1) % languages.length]);
   };
   return (
     <header
@@ -60,19 +64,24 @@ export default function Header() {
 
         <nav className="flex gap-6 text-sm">
           <a href="#about" className={linkStyle("about")}>
-            About
+            {t.navAbout}
           </a>
 
           <a href="#projects" className={linkStyle("projects")}>
-            Projects
+            {t.navProjects}
           </a>
 
           <a href="#contact" className={linkStyle("contact")}>
-            Contact
+            {t.navContact}
           </a>
 
-          <button onClick={() => setLanguage(language === "pt" ? "en" : "pt")}>
-            {language === "pt" ? "PT" : "EN"}
+          <button
+            type="button"
+            onClick={toggleLanguage}
+            aria-label={t.switchLanguage}
+            title={t.switchLanguage}
+          >
+            {language.toUpperCase()}
           </button>
         </nav>
       </div>

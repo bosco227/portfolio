@@ -2,6 +2,11 @@ export const translations = {
   pt: {
     header:
       "Desenvolvendo aplicações web modernas utilizando React, JavaScript e tecnologias do ecosssitema web.",
+    role: "Desenvolvedor Web/Engenheiro de Software",
+    navAbout: "Sobre",
+    navProjects: "Projetos",
+    navContact: "Contato",
+    switchLanguage: "Alterar idioma",
     aboutTitle: "Sobre mim",
     who: "Quem sou",
     whoText:
@@ -17,11 +22,23 @@ export const translations = {
     goal: "Objetivo",
     goalText:
       "Busco oportunidades para crescer como desenvolvedor e contribuir em projetos reais.",
+    projectDescriptions: {
+      pomodoro: "Aplicação de temporizador baseada na técnica Pomodoro.",
+      castor: "Site de vendas da loja de minha família.",
+      naregua: "Site para simular o software de uma barbearia.",
+      blacksite:
+        'Um tipo de "jogo" simulando um terminal militar amaldiçoado.',
+    },
   },
 
   en: {
     header:
       "Developing modern web applications using React, JavaScript, and technologies from the web ecosystem.",
+    role: "Web Developer/Software Engineer",
+    navAbout: "About",
+    navProjects: "Projects",
+    navContact: "Contact",
+    switchLanguage: "Change language",
     aboutTitle: "About me",
     who: "Who I am",
     whoText:
@@ -37,5 +54,46 @@ export const translations = {
     goal: "Goal",
     goalText:
       "I am looking for opportunities to grow as a developer and contribute to real-world projects.",
+    projectDescriptions: {
+      pomodoro: "A timer application based on the Pomodoro technique.",
+      castor: "An e-commerce website for my family's store.",
+      naregua: "A website that simulates barbershop management software.",
+      blacksite:
+        'A game-like experience that simulates a haunted military terminal.',
+    },
+  },
+
+  es: {
+    header:
+      "Desarrollo aplicaciones web modernas con React, JavaScript y tecnologías del ecosistema web.",
+    role: "Desarrollador web/Ingeniero de software",
+    navAbout: "Sobre mí",
+    navProjects: "Proyectos",
+    navContact: "Contacto",
+    switchLanguage: "Cambiar idioma",
+    aboutTitle: "Sobre mí",
+    who: "Quién soy",
+    whoText:
+      "Soy estudiante de Ingeniería de Software y me apasionan la programación y el desarrollo web.",
+    projects: "Ver proyectos",
+    project: "Ver proyecto",
+    p: "Proyectos",
+
+    tools: "Tecnologías que utilizo",
+    toolsText:
+      "Actualmente desarrollo aplicaciones con React, Next.js, Django y PostgreSQL.",
+
+    goal: "Objetivo",
+    goalText:
+      "Busco oportunidades para crecer como desarrollador y contribuir en proyectos reales.",
+    projectDescriptions: {
+      pomodoro:
+        "Aplicación de temporizador basada en la técnica Pomodoro.",
+      castor: "Sitio web de ventas para la tienda de mi familia.",
+      naregua:
+        "Sitio web que simula el software de gestión de una barbería.",
+      blacksite:
+        'Una especie de "juego" que simula una terminal militar embrujada.',
+    },
   },
 };

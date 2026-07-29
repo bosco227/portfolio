@@ -24,7 +24,7 @@ export default function Hero() {
       </h1>
 
       <h2 className="text-2xl text-gray-300 mt-4">
-        Web Developer/Software Engineer
+        {t.role}
       </h2>
 
       <p className="text-gray-400 mt-6 max-w-xl">{t.header}</p>

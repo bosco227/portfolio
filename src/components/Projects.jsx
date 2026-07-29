@@ -4,24 +4,40 @@ import { translations } from "./translations/translations";
 import { useContext } from "react";
 
 export default function Projects() {
+  const { language } = useContext(LanguageContext);
+  const t = translations[language];
   const projects = [
     {
       title: "Pomodoro Clone",
-      desc: "Aplicação de temporizador baseada na técnica Pomodoro.",
-      tech: ["React", "Tailwind","TypeScript"],
+      desc: t.projectDescriptions.pomodoro,
+      tech: ["React", "Tailwind", "TypeScript"],
       link: "https://pomodoro-clone-woad.vercel.app/",
       image: "/pomodoro.png",
     },
     {
       title: "Site Castor",
-      desc: "Site de vendas da loja de minha família.",
-      tech: ["React", "Tailwind","JavaScript"],
+      desc: t.projectDescriptions.castor,
+      tech: ["React", "Tailwind", "JavaScript"],
       link: "https://site-castor.vercel.app/",
       image: "/castor.png",
     },
+    {
+      title: "Na régua",
+      desc: t.projectDescriptions.naregua,
+      tech: [
+        "React, Next.js, TypeScript, React Router, Leaflet, Node.js, Express, MySQL, Vercel e Railway",
+      ],
+      link: "https://naregua-ochre.vercel.app/",
+      image: "/naregua.png",
+    },
+    {
+      title: "Blacksite",
+      desc: t.projectDescriptions.blacksite,
+      tech: ["React", "Tailwind", "Node"],
+      link: "https://blacksite-beta.vercel.app/",
+      image: "/blacksite.png",
+    },
   ];
-  const { language } = useContext(LanguageContext);
-  const t = translations[language];
   return (
     <motion.section
       id="projects"
