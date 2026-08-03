@@ -23,6 +23,12 @@ export const translations = {
     goalText:
       "Busco oportunidades para crescer como desenvolvedor e contribuir em projetos reais.",
     projectDescriptions: {
+      lumina:
+        "Editor de código online para criar, visualizar, salvar e exportar projetos em HTML, CSS e JavaScript.",
+      pokelab:
+        "Pokédex interativa com favoritos e um simulador de batalhas alimentado por dados da PokeAPI.",
+      bellaNoche:
+        "Mostruário de moda feminina com catálogo, variações de produto e carrinho demonstrativo.",
       pomodoro: "Aplicação de temporizador baseada na técnica Pomodoro.",
       castor: "Site de vendas da loja de minha família.",
       naregua: "Site para simular o software de uma barbearia.",
@@ -55,6 +61,12 @@ export const translations = {
     goalText:
       "I am looking for opportunities to grow as a developer and contribute to real-world projects.",
     projectDescriptions: {
+      lumina:
+        "An online code editor for creating, previewing, saving, and exporting HTML, CSS, and JavaScript projects.",
+      pokelab:
+        "An interactive Pokédex with favorites and a battle simulator powered by PokeAPI data.",
+      bellaNoche:
+        "A women's fashion showcase with a catalog, product variants, and a demo shopping bag.",
       pomodoro: "A timer application based on the Pomodoro technique.",
       castor: "An e-commerce website for my family's store.",
       naregua: "A website that simulates barbershop management software.",
@@ -87,6 +99,12 @@ export const translations = {
     goalText:
       "Busco oportunidades para crecer como desarrollador y contribuir en proyectos reales.",
     projectDescriptions: {
+      lumina:
+        "Editor de código en línea para crear, visualizar, guardar y exportar proyectos en HTML, CSS y JavaScript.",
+      pokelab:
+        "Pokédex interactiva con favoritos y un simulador de batallas basado en datos de la PokeAPI.",
+      bellaNoche:
+        "Escaparate de moda femenina con catálogo, variantes de producto y bolsa de compra demostrativa.",
       pomodoro:
         "Aplicación de temporizador basada en la técnica Pomodoro.",
       castor: "Sitio web de ventas para la tienda de mi familia.",
