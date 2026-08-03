@@ -1,36 +1,28 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { LanguageContext } from "./context/LanguageContext";
 import { translations } from "./translations/translations";
-import { useContext } from "react";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [active, setActive] = useState("");
+  const { language, setLanguage } = useContext(LanguageContext);
+  const t = translations[language];
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
-    };
-
+    const handleScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", handleScroll);
 
     const sections = document.querySelectorAll("section");
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setActive(entry.target.id);
-          }
+          if (entry.isIntersecting) setActive(entry.target.id);
         });
       },
-      {
-        threshold: 0.6,
-      },
+      { threshold: 0.55 },
     );
 
     sections.forEach((section) => observer.observe(section));
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
       observer.disconnect();
@@ -38,50 +30,35 @@ export default function Header() {
   }, []);
 
   const linkStyle = (id) =>
-    `transition ${
+    `nav-link transition ${
       active === id
-        ? "text-sky-400 font-medium"
-        : "text-gray-400 hover:text-sky-400"
+        ? "nav-link-active"
+        : "text-slate-400 hover:text-cyan-300"
     }`;
-  const { language, setLanguage } = useContext(LanguageContext);
-  const t = translations[language];
 
   const toggleLanguage = () => {
     const languages = ["en", "pt", "es"];
     const currentIndex = languages.indexOf(language);
     setLanguage(languages[(currentIndex + 1) % languages.length]);
   };
+
   return (
-    <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-slate-900/90 backdrop-blur border-b border-slate-800 shadow-lg"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-        <h1 className="font-semibold">Dev Antônio Bosco</h1>
+    <header className={`site-header sticky top-0 z-50 transition-all duration-300 ${scrolled ? "site-header-scrolled" : ""}`}>
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-14 py-4 flex justify-between items-center gap-5">
+        <a href="#hero" className="brand-lockup" aria-label="Antônio Bosco — início">
+          <span className="brand-mark">AB</span>
+          <span className="brand-copy">
+            <strong>Antônio Bosco</strong>
+            <small>SOFTWARE ENGINEER</small>
+          </span>
+        </a>
 
-        <nav className="flex gap-6 text-sm">
-          <a href="#about" className={linkStyle("about")}>
-            {t.navAbout}
-          </a>
-
-          <a href="#projects" className={linkStyle("projects")}>
-            {t.navProjects}
-          </a>
-
-          <a href="#contact" className={linkStyle("contact")}>
-            {t.navContact}
-          </a>
-
-          <button
-            type="button"
-            onClick={toggleLanguage}
-            aria-label={t.switchLanguage}
-            title={t.switchLanguage}
-          >
-            {language.toUpperCase()}
+        <nav className="flex items-center gap-3 sm:gap-6 text-xs sm:text-sm" aria-label="Navegação principal">
+          <a href="#about" className={linkStyle("about")}>{t.navAbout}</a>
+          <a href="#projects" className={linkStyle("projects")}>{t.navProjects}</a>
+          <a href="#contact" className={linkStyle("contact")}>{t.navContact}</a>
+          <button type="button" onClick={toggleLanguage} aria-label={t.switchLanguage} title={t.switchLanguage} className="language-switch">
+            <span className="status-pulse" />{language.toUpperCase()}
           </button>
         </nav>
       </div>

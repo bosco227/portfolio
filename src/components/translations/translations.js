@@ -3,17 +3,34 @@ export const translations = {
     header:
       "Desenvolvendo aplicações web modernas utilizando React, JavaScript e tecnologias do ecosssitema web.",
     role: "Desenvolvedor Web/Engenheiro de Software",
+    heroEyebrow: "SISTEMA // PORTFÓLIO",
+    available: "Disponível para novos projetos",
+    metricProjects: "PROJETOS",
+    metricTools: "TECNOLOGIAS",
+    metricLanguages: "IDIOMAS",
     navAbout: "Sobre",
     navProjects: "Projetos",
     navContact: "Contato",
     switchLanguage: "Alterar idioma",
     aboutTitle: "Sobre mim",
+    aboutEyebrow: "PERFIL // STACK",
+    aboutIntro:
+      "Código limpo, interfaces bem pensadas e produtos digitais que resolvem problemas reais.",
     who: "Quem sou",
     whoText:
       "Sou um estudante de Engenharia de Software apaixonado por programação e desenvolvimento web.",
     projects: "Ver projetos",
     project: "Ver projeto",
     p: "Projetos",
+    projectsEyebrow: "ARQUIVO // TRABALHOS SELECIONADOS",
+    projectsIntro:
+      "Uma seleção de produtos digitais, experimentos e sistemas construídos do conceito ao deploy.",
+    recent: "RECENTE",
+    contactEyebrow: "CONEXÃO // CONTATO",
+    contactTitle: "Vamos construir algo memorável?",
+    contactText:
+      "Estou aberto a projetos, oportunidades e boas conversas sobre tecnologia.",
+    contactCta: "Enviar mensagem",
 
     tools: "Ferramentas que uso",
     toolsText:
@@ -41,17 +58,34 @@ export const translations = {
     header:
       "Developing modern web applications using React, JavaScript, and technologies from the web ecosystem.",
     role: "Web Developer/Software Engineer",
+    heroEyebrow: "SYSTEM // PORTFOLIO",
+    available: "Available for new projects",
+    metricProjects: "PROJECTS",
+    metricTools: "TECHNOLOGIES",
+    metricLanguages: "LANGUAGES",
     navAbout: "About",
     navProjects: "Projects",
     navContact: "Contact",
     switchLanguage: "Change language",
     aboutTitle: "About me",
+    aboutEyebrow: "PROFILE // STACK",
+    aboutIntro:
+      "Clean code, thoughtful interfaces, and digital products that solve real problems.",
     who: "Who I am",
     whoText:
       "I am a Software Engineering student passionate about programming and web development.",
     projects: "See projects",
     project: "See project",
     p: "Projects",
+    projectsEyebrow: "ARCHIVE // SELECTED WORK",
+    projectsIntro:
+      "A selection of digital products, experiments, and systems built from concept to deployment.",
+    recent: "RECENT",
+    contactEyebrow: "CONNECTION // CONTACT",
+    contactTitle: "Let's build something memorable?",
+    contactText:
+      "I'm open to projects, opportunities, and good conversations about technology.",
+    contactCta: "Send a message",
 
     tools: "Technologies I use",
     toolsText:
@@ -79,17 +113,34 @@ export const translations = {
     header:
       "Desarrollo aplicaciones web modernas con React, JavaScript y tecnologías del ecosistema web.",
     role: "Desarrollador web/Ingeniero de software",
+    heroEyebrow: "SISTEMA // PORTAFOLIO",
+    available: "Disponible para nuevos proyectos",
+    metricProjects: "PROYECTOS",
+    metricTools: "TECNOLOGÍAS",
+    metricLanguages: "IDIOMAS",
     navAbout: "Sobre mí",
     navProjects: "Proyectos",
     navContact: "Contacto",
     switchLanguage: "Cambiar idioma",
     aboutTitle: "Sobre mí",
+    aboutEyebrow: "PERFIL // STACK",
+    aboutIntro:
+      "Código limpio, interfaces bien pensadas y productos digitales que resuelven problemas reales.",
     who: "Quién soy",
     whoText:
       "Soy estudiante de Ingeniería de Software y me apasionan la programación y el desarrollo web.",
     projects: "Ver proyectos",
     project: "Ver proyecto",
     p: "Proyectos",
+    projectsEyebrow: "ARCHIVO // TRABAJOS SELECCIONADOS",
+    projectsIntro:
+      "Una selección de productos digitales, experimentos y sistemas construidos del concepto al despliegue.",
+    recent: "RECIENTE",
+    contactEyebrow: "CONEXIÓN // CONTACTO",
+    contactTitle: "¿Construimos algo memorable?",
+    contactText:
+      "Estoy abierto a proyectos, oportunidades y buenas conversaciones sobre tecnología.",
+    contactCta: "Enviar mensaje",
 
     tools: "Tecnologías que utilizo",
     toolsText:
