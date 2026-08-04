@@ -40,6 +40,8 @@ export const translations = {
     goalText:
       "Busco oportunidades para crescer como desenvolvedor e contribuir em projetos reais.",
     projectDescriptions: {
+      codiceDaForca:
+        "Códice editorial sobre formas de combate, sabres, cristais Kyber e as hierarquias Jedi e Sith.",
       lumina:
         "Editor de código online para criar, visualizar, salvar e exportar projetos em HTML, CSS e JavaScript.",
       pokelab:
@@ -95,6 +97,8 @@ export const translations = {
     goalText:
       "I am looking for opportunities to grow as a developer and contribute to real-world projects.",
     projectDescriptions: {
+      codiceDaForca:
+        "An editorial codex covering combat forms, lightsabers, Kyber crystals, and the Jedi and Sith hierarchies.",
       lumina:
         "An online code editor for creating, previewing, saving, and exporting HTML, CSS, and JavaScript projects.",
       pokelab:
@@ -150,6 +154,8 @@ export const translations = {
     goalText:
       "Busco oportunidades para crecer como desarrollador y contribuir en proyectos reales.",
     projectDescriptions: {
+      codiceDaForca:
+        "Códice editorial sobre formas de combate, sables, cristales Kyber y las jerarquías Jedi y Sith.",
       lumina:
         "Editor de código en línea para crear, visualizar, guardar y exportar proyectos en HTML, CSS y JavaScript.",
       pokelab:

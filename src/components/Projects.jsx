@@ -7,6 +7,7 @@ export default function Projects() {
   const { language } = useContext(LanguageContext);
   const t = translations[language];
   const projects = [
+    { title: "Códice da Força", desc: t.projectDescriptions.codiceDaForca, tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"], link: "https://force-codex.vercel.app/", image: "/codice-da-forca.webp" },
     { title: "Lumina", desc: t.projectDescriptions.lumina, tech: ["Next.js", "React", "TypeScript", "Web APIs"], link: "https://lumina-eta-roan.vercel.app/", image: "/lumina.png" },
     { title: "PokéLab", desc: t.projectDescriptions.pokelab, tech: ["Next.js", "React", "TypeScript", "PokeAPI"], link: "https://poke-site-antonio-bosco-souza-lopes-projects.vercel.app/", image: "/poke-site.png" },
     { title: "Bella Noche", desc: t.projectDescriptions.bellaNoche, tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"], link: "https://bella-noche.vercel.app/", image: "/bella-noche.png" },
