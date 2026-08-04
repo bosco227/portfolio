@@ -30,7 +30,7 @@ export default function Hero() {
         </div>
 
         <div className="hero-metrics">
-          <div><strong>08</strong><span>{t.metricProjects}</span></div>
+          <div><strong>09</strong><span>{t.metricProjects}</span></div>
           <div><strong>09</strong><span>{t.metricTools}</span></div>
           <div><strong>03</strong><span>{t.metricLanguages}</span></div>
         </div>
