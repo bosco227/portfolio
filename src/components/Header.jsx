@@ -9,23 +9,38 @@ export default function Header() {
   const t = translations[language];
 
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handleScroll);
+    const sections = ["about", "projects", "contact"]
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
+    let animationFrame;
 
-    const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) setActive(entry.target.id);
-        });
-      },
-      { threshold: 0.55 },
-    );
+    const updateHeader = () => {
+      setScrolled(window.scrollY > 20);
 
-    sections.forEach((section) => observer.observe(section));
+      const readingLine = window.scrollY + Math.min(180, window.innerHeight * 0.3);
+      const currentSection = sections.reduce(
+        (current, section) => section.offsetTop <= readingLine ? section.id : current,
+        "",
+      );
+
+      setActive(currentSection);
+      animationFrame = undefined;
+    };
+
+    const handleScroll = () => {
+      if (animationFrame === undefined) {
+        animationFrame = window.requestAnimationFrame(updateHeader);
+      }
+    };
+
+    updateHeader();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("resize", handleScroll);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      observer.disconnect();
+      window.removeEventListener("resize", handleScroll);
+      if (animationFrame !== undefined) window.cancelAnimationFrame(animationFrame);
     };
   }, []);
 
