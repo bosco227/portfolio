@@ -50,6 +50,9 @@ export const translations = {
       blacksite: "Experiência narrativa interativa",
       pomodoro: "Aplicação de produtividade",
       castor: "Vitrine digital para comércio local",
+      cmdca: "Portal institucional de interesse público",
+      aecit: "Site institucional para organização social",
+      pokerzin: "Experiência interativa de poker",
     },
     projectHighlights: {
       ordemEterna: [
@@ -97,6 +100,21 @@ export const translations = {
         "Navegação responsiva e organização de catálogo com React Router.",
         "Projeto focado em presença online e clareza para o cliente final.",
       ],
+      cmdca: [
+        "Arquitetura editorial para apresentar conselho, ações, CPA e NUCA.",
+        "Direção visual autoral, responsiva e acessível para diferentes públicos.",
+        "Conteúdo institucional estruturado com SEO social e publicação na Vercel.",
+      ],
+      aecit: [
+        "Identidade digital para uma associação comunitária com atuação territorial.",
+        "Narrativa institucional organizada entre missão, projetos e formas de apoio.",
+        "Experiência responsiva com imagens otimizadas, SEO e deploy contínuo.",
+      ],
+      pokerzin: [
+        "Mesa de No Limit Hold'em com fluxo completo de apostas e controle por atalhos.",
+        "Oponente adaptativo que observa padrões e ajusta o comportamento de jogo.",
+        "Interface imersiva, responsiva e com memória local das mãos analisadas.",
+      ],
     },
     projectDescriptions: {
       ordemEterna:
@@ -111,6 +129,12 @@ export const translations = {
         "Mostruário de moda feminina com catálogo, variações de produto e carrinho demonstrativo.",
       pomodoro: "Aplicação de temporizador baseada na técnica Pomodoro.",
       castor: "Site de vendas da loja de minha família.",
+      cmdca:
+        "Portal institucional do CMDCA de Itaitinga para apresentar direitos, participação adolescente, ações e canais de proteção.",
+      aecit:
+        "Site institucional da Associação Evangélica Comunitária de Itaitinga, conectando projetos sociais, atuação e formas de apoio.",
+      pokerzin:
+        "Jogo de poker heads-up com oponente adaptativo, leitura de padrões e uma mesa construída para partidas rápidas no navegador.",
       naregua: "Site para simular o software de uma barbearia.",
       blacksite:
         'Um tipo de "jogo" simulando um terminal militar amaldiçoado.',
@@ -168,6 +192,9 @@ export const translations = {
       blacksite: "Interactive narrative experience",
       pomodoro: "Productivity application",
       castor: "Local business digital showcase",
+      cmdca: "Public-interest institutional portal",
+      aecit: "Institutional website for a social organization",
+      pokerzin: "Interactive poker experience",
     },
     projectHighlights: {
       ordemEterna: [
@@ -215,6 +242,21 @@ export const translations = {
         "Responsive navigation and catalog organization with React Router.",
         "Project focused on online presence and customer clarity.",
       ],
+      cmdca: [
+        "Editorial architecture presenting the council, initiatives, CPA, and NUCA.",
+        "Original, responsive, and accessible visual direction for diverse audiences.",
+        "Structured institutional content with social SEO and Vercel deployment.",
+      ],
+      aecit: [
+        "Digital identity for a community association with local social initiatives.",
+        "Institutional narrative organized around mission, projects, and ways to support.",
+        "Responsive experience with optimized images, SEO, and continuous deployment.",
+      ],
+      pokerzin: [
+        "No Limit Hold'em table with a complete betting flow and keyboard controls.",
+        "Adaptive opponent that observes patterns and adjusts its playing behavior.",
+        "Immersive, responsive interface with locally stored hand analysis.",
+      ],
     },
     projectDescriptions: {
       ordemEterna:
@@ -229,6 +271,12 @@ export const translations = {
         "A women's fashion showcase with a catalog, product variants, and a demo shopping bag.",
       pomodoro: "A timer application based on the Pomodoro technique.",
       castor: "An e-commerce website for my family's store.",
+      cmdca:
+        "An institutional portal for CMDCA Itaitinga presenting rights, youth participation, initiatives, and protection channels.",
+      aecit:
+        "The institutional website of the Evangelical Community Association of Itaitinga, connecting social projects, impact, and ways to support.",
+      pokerzin:
+        "A heads-up poker game with an adaptive opponent, pattern reading, and a table designed for quick browser matches.",
       naregua: "A website that simulates barbershop management software.",
       blacksite:
         'A game-like experience that simulates a haunted military terminal.',
@@ -286,6 +334,9 @@ export const translations = {
       blacksite: "Experiencia narrativa interactiva",
       pomodoro: "Aplicación de productividad",
       castor: "Escaparate digital para comercio local",
+      cmdca: "Portal institucional de interés público",
+      aecit: "Sitio institucional para organización social",
+      pokerzin: "Experiencia interactiva de póker",
     },
     projectHighlights: {
       ordemEterna: [
@@ -333,6 +384,21 @@ export const translations = {
         "Navegación responsiva y organización de catálogo con React Router.",
         "Proyecto enfocado en presencia online y claridad para el cliente final.",
       ],
+      cmdca: [
+        "Arquitectura editorial para presentar el consejo, acciones, CPA y NUCA.",
+        "Dirección visual original, responsiva y accesible para distintos públicos.",
+        "Contenido institucional estructurado con SEO social y publicación en Vercel.",
+      ],
+      aecit: [
+        "Identidad digital para una asociación comunitaria con actuación territorial.",
+        "Narrativa institucional organizada entre misión, proyectos y formas de apoyo.",
+        "Experiencia responsiva con imágenes optimizadas, SEO y despliegue continuo.",
+      ],
+      pokerzin: [
+        "Mesa de No Limit Hold'em con flujo completo de apuestas y control por atajos.",
+        "Oponente adaptativo que observa patrones y ajusta su comportamiento de juego.",
+        "Interfaz inmersiva, responsiva y con memoria local de las manos analizadas.",
+      ],
     },
     projectDescriptions: {
       ordemEterna:
@@ -348,6 +414,12 @@ export const translations = {
       pomodoro:
         "Aplicación de temporizador basada en la técnica Pomodoro.",
       castor: "Sitio web de ventas para la tienda de mi familia.",
+      cmdca:
+        "Portal institucional del CMDCA de Itaitinga para presentar derechos, participación adolescente, acciones y canales de protección.",
+      aecit:
+        "Sitio institucional de la Asociación Evangélica Comunitaria de Itaitinga, conectando proyectos sociales, actuación y formas de apoyo.",
+      pokerzin:
+        "Juego de póker heads-up con oponente adaptativo, lectura de patrones y una mesa creada para partidas rápidas en el navegador.",
       naregua:
         "Sitio web que simula el software de gestión de una barbería.",
       blacksite:

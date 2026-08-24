@@ -8,6 +8,9 @@ export default function Projects() {
   const t = translations[language];
   const projects = [
     { key: "castor", title: "Site Castor", tech: ["React", "Vite", "Tailwind CSS", "React Router"], link: "https://site-castor.vercel.app/", image: "/castor.png" },
+    { key: "cmdca", title: "CMDCA Itaitinga", tech: ["Next.js", "React", "TypeScript", "Responsive Design", "SEO", "Vercel"], link: "https://cmdca-blue.vercel.app/", image: "/cmdca.jpg" },
+    { key: "aecit", title: "AECIT", tech: ["Next.js", "React", "TypeScript", "Responsive Design", "SEO", "Vercel"], link: "https://aecit.vercel.app/", image: "/aecit.jpg" },
+    { key: "pokerzin", title: "Pokerzin", tech: ["Next.js", "React", "TypeScript", "Game Logic", "Local Storage"], link: "https://pokerzin-weld.vercel.app/", image: "/pokerzin.jpg" },
     { key: "lumina", title: "Lumina", tech: ["Next.js", "React", "TypeScript", "Web APIs"], link: "https://lumina-eta-roan.vercel.app/", image: "/lumina.png" },
     { key: "pomodoro", title: "Pomodoro Clone", tech: ["React", "TypeScript", "Tailwind CSS", "Vite", "React Router", "date-fns"], link: "https://pomodoro-clone-woad.vercel.app/", image: "/pomodoro.png" },
     { key: "bellaNoche", title: "Bella Noche", tech: ["Next.js", "React", "TypeScript", "Tailwind CSS"], link: "https://bella-noche.vercel.app/", image: "/bella-noche.png" },
