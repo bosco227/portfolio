@@ -18,7 +18,6 @@ export default function Projects() {
     { key: "codiceDaForca", title: "Códice da Força", tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "SEO"], link: "https://force-codex.vercel.app/", image: "/codice-da-forca.webp" },
     { key: "pokelab", title: "PokéLab", tech: ["Next.js", "React", "TypeScript", "PokeAPI"], link: "https://poke-site-antonio-bosco-souza-lopes-projects.vercel.app/", image: "/poke-site.png" },
     { key: "blacksite", title: "Blacksite", tech: ["React", "JavaScript", "Vite", "Node.js", "Express", "REST API"], link: "https://blacksite-beta.vercel.app/", image: "/blacksite.png" },
-    { key: "ordemEterna", title: "Ordem Eterna", tech: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel", "SEO"], link: "https://ordem-eterna.vercel.app/", image: "/ordem-eterna.png" },
   ].map((project) => ({
     ...project,
     type: t.projectTypes[project.key],
